@@ -13,7 +13,7 @@ const database = require('./lib/database');
 //const transportMethod = process.env['SENECA_TRANSPORT_METHOD'] || 'rabbitmq';
 
 
-const patternPin = 'role:user';  // TODO: Change role
+const patternPin = 'role:notifications';
 
 // init database and then seneca and expose functions
 database.connect()
