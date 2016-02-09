@@ -22,7 +22,7 @@ database.connect()
     .then(() => {
         seneca
             .add(patternPin + ',cmd:notify,entity:message', myModule.notifyNewMessage)
-            .listen({type: 'tcp', port: 7001, pin: patternPin});
+            .listen({type: 'tcp', port: 7004, pin: patternPin});
     })
     .catch(err => {
         log.fatal(err, 'MS-Notification is unable to connect to Database');
