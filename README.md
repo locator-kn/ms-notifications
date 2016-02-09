@@ -1,10 +1,6 @@
-# ms-sample
+# ms-notification
 
-[![Dependencies][david-badge]][david-url]
-
-This repository contains some sample code for a single microservice.
-
-It uses `seneca.js` and `rabbitmq`.
+This repository is a microservice. It uses `seneca.js` and `TCP`. (Maybe `rabbitmq` in near future)
 
 The business-logic lives in the `lib` directory. The `index.js` is used to expose the functionality.
 
