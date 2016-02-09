@@ -1,0 +1,23 @@
+{
+  "name": "ms-notifications",
+  "version": "1.0.0",
+  "description": "microservice for sending out notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "documentation": "documentation index.js -o docs/ -f html -g",
+    "gendocs": "./generate_docs.sh"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "mongodb": "^2.1.1",
+    "seneca": "^0.9.2",
+    "seneca-rabbitmq-transport": "^0.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.7.0",
+    "proxyquire": "^1.7.3"
+  }
+}

@@ -1,0 +1,23 @@
+# ms-sample
+
+[![Dependencies][david-badge]][david-url]
+
+This repository contains some sample code for a single microservice.
+
+It uses `seneca.js` and `rabbitmq`.
+
+The business-logic lives in the `lib` directory. The `index.js` is used to expose the functionality.
+
+## Tests
+
+The repo contains also some tests with a sample to mock the database.
+
+To run the tests, simple call `npm run test`.
+
+## Documentation
+
+The documentation can be found on the branch `gh-pages`. To update/generate the docs, call `npm run gendocs`
+
+
+[david-badge]: https://david-dm.org/locator-kn/ms-sample.svg
+[david-url]: https://david-dm.org/locator-kn/ms-sample
