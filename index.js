@@ -19,8 +19,6 @@ const patternPin = 'role:notifications';
 database.connect()
     .then(() => {
         seneca
-            .add(patternPin + ',cmd:do', myModule.do)
-            .add(patternPin + ',cmd:do,entity:something', myModule.doSomething)
-            .add(patternPin + ',cmd:do,entity:else', myModule.doSomethingElse)
+            .add(patternPin + ',cmd:notify,entity:message', myModule.notifyNewMessage)
             .listen({type: 'tcp', port: 7001, pin: patternPin});
     });
