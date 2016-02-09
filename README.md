@@ -14,6 +14,3 @@ To run the tests, simple call `npm run test`.
 
 The documentation can be found on the branch `gh-pages`. To update/generate the docs, call `npm run gendocs`
 
-
-[david-badge]: https://david-dm.org/locator-kn/ms-sample.svg
-[david-url]: https://david-dm.org/locator-kn/ms-sample
