@@ -8,6 +8,8 @@ const seneca = require('seneca')();
 const myModule = require('./lib/module');
 const database = require('./lib/database');
 
+const log = require('ms-utilities').logger;
+
 
 // select desired transport method
 //const transportMethod = process.env['SENECA_TRANSPORT_METHOD'] || 'rabbitmq';
@@ -21,4 +23,7 @@ database.connect()
         seneca
             .add(patternPin + ',cmd:notify,entity:message', myModule.notifyNewMessage)
             .listen({type: 'tcp', port: 7001, pin: patternPin});
+    })
+    .catch(err => {
+        log.fatal(err, 'MS-Notification is unable to connect to Database');
     });
