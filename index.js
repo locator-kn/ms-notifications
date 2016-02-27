@@ -22,6 +22,26 @@ database.connect()
     .then(() => {
         seneca
             .add(patternPin + ',cmd:notify,entity:message', myModule.notifyNewMessage)
+            .add(patternPin + ',cmd:notify,entity:newLocation', myModule.notifyFollowerNewLocation)
+
+
+           /* .act({
+                role: 'notifications',
+                cmd: 'notify',
+                entity: 'message',
+                data: {
+                    user_to: '569e4a83a6e5bb503b838306',
+                    user_from: '569e4a83a6e5bb503b838306',
+                    message: 'Wir brüchten ein push Konzept'
+                }
+            }, (err, result)=> {
+                if (err) {
+                    return console.log('Error executing service', err);
+                }
+                console.log('Service executed, push sent', result);
+            })
+*/
+
             .listen({type: 'tcp', port: 7004, pin: patternPin});
     })
     .catch(err => {
