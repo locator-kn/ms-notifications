@@ -25,23 +25,23 @@ database.connect()
             .add(patternPin + ',cmd:notify,entity:newLocation', myModule.notifyFollowerNewLocation)
             .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
 
-
-           /* .act({
+/*
+           .act({
                 role: 'notifications',
                 cmd: 'notify',
-                entity: 'message',
+                entity: 'newFollower',
                 data: {
-                    user_to: '569e4a83a6e5bb503b838306',
-                    user_from: '569e4a83a6e5bb503b838306',
-                    message: 'Wir brüchten ein push Konzept'
+                    user_id: '569e4a83a6e5bb503b838306',
+                    follower_id: '569e4a83a6e5bb503b838306',
+                  //  message: 'noch ein follower'
                 }
             }, (err, result)=> {
                 if (err) {
                     return console.log('Error executing service', err);
                 }
                 console.log('Service executed, push sent', result);
-            })
-*/
+            })*/
+
 
             .listen({type: 'tcp', port: 7004, pin: patternPin});
     })
