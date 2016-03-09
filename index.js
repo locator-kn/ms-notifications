@@ -24,6 +24,7 @@ database.connect()
             .add(patternPin + ',cmd:notify,entity:message', myModule.notifyNewMessage)
             .add(patternPin + ',cmd:notify,entity:newLocation', myModule.notifyFollowerNewLocation)
             .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
+            .add(patternPin + ',cmd:notify,entity:newLocFollower', myModule.notifyMyLocationHasNewFavorator)
 
 /*
            .act({
