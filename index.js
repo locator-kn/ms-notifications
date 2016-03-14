@@ -23,7 +23,7 @@ database.connect()
         seneca
             .add(patternPin + ',cmd:notify,entity:newLocation', myModule.notifyFollowerNewLocation)
             .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
-            .add(patternPin + ',cmd:notify,entity:newLocFollower', myModule.notifyMyLocationHasNewFavorator)
+            .add(patternPin + ',cmd:notify,entity:location,action:newFavorator', myModule.notifyMyLocationHasNewFavorator)
 
 /*
            .act({
