@@ -4,6 +4,12 @@ const path = require('path');
 const pwd = path.join(__dirname, '..', '/.env');
 require('dotenv').config({path: pwd});
 
+// init opbeat, secret and orga will be loaded from env
+require('opbeat').start({
+    appId: 'fdf8d5f93d',
+    active: process.env['NODE_ENV'] === 'production'
+});
+
 const seneca = require('seneca')();
 const myModule = require('./lib/module');
 const database = require('./lib/database');
