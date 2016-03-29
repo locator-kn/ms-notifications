@@ -18,7 +18,9 @@
     "mongodb": "^2.1.1",
     "ms-utilities": "^2.3.5",
     "node-gcm": "^0.14.0",
-    "seneca": "^0.9.2",
+    "seneca": "^1.4.0",
+    "seneca-balance-client": "^0.4.0",
+    "seneca-mesh": "^0.7.0",
     "seneca-rabbitmq-transport": "^0.2.1",
     "opbeat": "^3.6.6"
   },
