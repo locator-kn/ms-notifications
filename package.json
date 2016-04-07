@@ -25,7 +25,7 @@
     "opbeat": "^3.6.6"
   },
   "devDependencies": {
-    "ava": "^0.7.0",
+    "ava": "^0.14.0",
     "proxyquire": "^1.7.3"
   }
 }
