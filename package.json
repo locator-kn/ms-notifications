@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "apn": "^1.7.5",
-    "bluebird": "^3.3.4",
+    "bluebird": "^3.3.5",
     "dotenv": "^2.0.0",
     "joi": "^8.0.5",
     "mongodb": "^2.1.16",
