@@ -15,7 +15,7 @@
     "bluebird": "^3.3.4",
     "dotenv": "^1.2.0",
     "joi": "^8.0.5",
-    "mongodb": "^2.1.1",
+    "mongodb": "^2.1.16",
     "ms-utilities": "^4.0.0",
     "node-gcm": "^0.14.0",
     "seneca": "^2.0.0",
