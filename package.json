@@ -13,19 +13,18 @@
   "dependencies": {
     "apn": "^1.7.5",
     "bluebird": "^3.3.5",
-    "dotenv": "^1.2.0",
-    "joi": "^7.2.3",
-    "mongodb": "^2.1.1",
+    "dotenv": "^2.0.0",
+    "joi": "^8.0.5",
+    "mongodb": "^2.1.16",
     "ms-utilities": "^4.0.0",
     "node-gcm": "^0.14.0",
-    "seneca": "^1.4.0",
+    "seneca": "^2.0.0",
     "seneca-balance-client": "^0.4.0",
     "seneca-mesh": "^0.7.0",
-    "seneca-rabbitmq-transport": "^0.2.1",
     "opbeat": "^3.6.6"
   },
   "devDependencies": {
-    "ava": "^0.7.0",
+    "ava": "^0.14.0",
     "proxyquire": "^1.7.3"
   }
 }
