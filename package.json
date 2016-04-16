@@ -8,6 +8,10 @@
     "documentation": "documentation index.js -o docs/ -f html -g",
     "gendocs": "./generate_docs.sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/locator-kn/ms-notifications.git"
+  },
   "author": "",
   "license": "MIT",
   "dependencies": {
