@@ -13,7 +13,6 @@ require('opbeat').start({
 const seneca = require('seneca')();
 
 const myModule = require('./lib/module');
-const log = require('ms-utilities').logger;
 
 // select desired transport method
 //const transportMethod = process.env['SENECA_TRANSPORT_METHOD'] || 'rabbitmq';
