@@ -26,23 +26,22 @@ seneca
     .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
     .add(patternPin + ',cmd:notify,entity:location,action:newFavorator', myModule.notifyMyLocationHasNewFavorator)
 
-
-    /*    .act({
-     role: 'notifications',
-     cmd: 'notify',
-     entity: 'location',
-     action: 'newFavorator',
-     data: {
-     favorator_id: '5708eca5dfc4f33d332d5105',
-     loc_id: '5712484fb693cc428c605ba4',
-     //  message: 'noch ein follower'
-     }
-     }, (err, result)=> {
-     if (err) {
-     return console.log('Error executing service', err);
-     }
-     console.log('Service executed, push sent', result);
-     })*/
+/*
+    .act({
+        role: 'notifications',
+        cmd: 'notify',
+        entity: 'newFollower',
+        data: {
+            user_id: '56e82bd502e5a70b4fccab8c',
+            follow_id: '56e82bd502e5a70b4fccab8c',
+            //  message: 'noch ein follower'
+        }
+    }, (err, result)=> {
+        if (err) {
+            return console.log('Error executing service', err);
+        }
+        console.log('Service executed, push sent', result);
+    })*/
 
 
     //.listen({type: 'tcp', port: 7004, pin: patternPin});
