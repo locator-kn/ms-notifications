@@ -26,14 +26,15 @@ seneca
     .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
     .add(patternPin + ',cmd:notify,entity:location,action:newFavorator', myModule.notifyMyLocationHasNewFavorator)
 
-    /*
-     .act({
+
+    /*    .act({
      role: 'notifications',
      cmd: 'notify',
-     entity: 'newFollower',
+     entity: 'location',
+     action: 'newFavorator',
      data: {
-     user_id: '569e4a83a6e5bb503b838306',
-     follower_id: '569e4a83a6e5bb503b838306',
+     favorator_id: '5708eca5dfc4f33d332d5105',
+     loc_id: '5712484fb693cc428c605ba4',
      //  message: 'noch ein follower'
      }
      }, (err, result)=> {
