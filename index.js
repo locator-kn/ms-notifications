@@ -23,6 +23,7 @@ const patternPin = 'role:notifications';
 // init seneca
 seneca
     .add(patternPin + ',cmd:notify,entity:newLocation', myModule.notifyFollowerNewLocation)
+    .add(patternPin + ',cmd:notify,entity:newImpression', myModule.notifyNewImpression)
     .add(patternPin + ',cmd:notify,entity:newFollower', myModule.notifyNewFollower)
     .add(patternPin + ',cmd:notify,entity:location,action:newFavorator', myModule.notifyMyLocationHasNewFavorator)
 
