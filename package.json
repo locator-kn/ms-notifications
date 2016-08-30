@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "apn": "^1.7.5",
-    "bluebird": "^3.3.5",
+    "bluebird": "^3.4.4",
     "dotenv": "^2.0.0",
     "joi": "^8.0.5",
     "ms-utilities": "^4.0.0",
