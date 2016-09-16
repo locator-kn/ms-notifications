@@ -21,7 +21,7 @@
     "joi": "^8.0.5",
     "ms-utilities": "^4.0.0",
     "node-gcm": "^0.14.0",
-    "seneca": "^2.0.1",
+    "seneca": "^3.1.0",
     "seneca-balance-client": "^0.4.0",
     "seneca-mesh": "^0.7.0",
     "opbeat": "^3.6.7"
